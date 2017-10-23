@@ -36,6 +36,7 @@ class App extends Component {
           <h1 className="App-title">Welcome</h1>
         </header>
         <p className="App-intro">Do something cool!</p>
+        <Timer />
       </div>
     )
   }

@@ -10,7 +10,7 @@ class Timer extends Component {
   componentDidMount() {
     this.interval = setInterval(() => {
       this.setState(state => ({ ...state, time: state.time + 1 }))
-    }, 1000)
+    }, 1)
   }
 
   componentWillUnmount() {
@@ -20,9 +20,9 @@ class Timer extends Component {
   render() {
     const time = this.state.time
     return time === 1 ? (
-      <div>{this.state.time} second ellapsed</div>
+      <div>{this.state.time} millisecond ellapsed</div>
     ) : (
-      <div>{this.state.time} seconds ellapsed</div>
+      <div>{this.state.time} milliseconds ellapsed</div>
     )
   }
 }
